@@ -22,7 +22,13 @@
         // Initialize the slider
     <script>
       $(document).ready(function(){
-        $('.slider').bxSlider();
+        $('.slider').bxSlider({
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 600
+        });
       });
     </script>
 </body>
