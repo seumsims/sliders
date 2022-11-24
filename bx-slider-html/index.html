@@ -5,29 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BX Slider HTML UI</title>
-    // Links to the libraries needed
+    <!-- // Links to the libraries needed -->
 <link rel="stylesheet" href="resources/bxslider-4-4.2.12/dist/jquery.bxslider.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
     
     
-    // Slider HTML (change this to your own!)
+    <!-- // Slider HTML (change this to your own!) -->
     <div class="slider">
         <div>I am a slide.</div>
         <div>I am another slide.</div>
     </div>
     <script src="resources/bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
     
-        // Initialize the slider
+        <!-- // Initialize the slider -->
     <script>
       $(document).ready(function(){
         $('.slider').bxSlider({
-                auto: true,
-                autoControls: true,
-                stopAutoOnClick: true,
-                pager: true,
-                slideWidth: 600
+          mode: 'fade',
+          randomStart: true,
+          infiniteLoop: true,
+          auto: true,
+          controls: false
         });
       });
     </script>
