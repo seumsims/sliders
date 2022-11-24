@@ -7,16 +7,24 @@
     <title>BX Slider HTML UI</title>
     <!-- // Links to the libraries needed -->
 <link rel="stylesheet" href="resources/bxslider-4-4.2.12/dist/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+  .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: relative;
+    bottom: 0;
+  }
+</style>
 </head>
 <body>
-    
-    
-    <!-- // Slider HTML (change this to your own!) -->
-    <div class="slider">
-        <div>I am a slide.</div>
-        <div>I am another slide.</div>
-    </div>
+  <header><h1>bx slider</h1></header>
+  
+  
+  <!-- // Slider HTML (change this to your own!) -->
+  <div class="slider">
+    <div>I am a slide.</div>
+    <div>I am another slide.</div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="resources/bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
     
         <!-- // Initialize the slider -->
@@ -27,7 +35,9 @@
           randomStart: true,
           infiniteLoop: true,
           auto: true,
-          controls: false
+          controls: false,
+          pager: true,
+          
         });
       });
     </script>
